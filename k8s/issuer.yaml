@@ -8,4 +8,8 @@ spec:
     email: 'guillaume.barre@ac-versailles.fr'
     privateKeySecretRef:
       name: letsencrypt-prod
-    http01: {}
+    solvers:
+    - selector: {}
+      http01:
+        ingress:
+          class: nginx
